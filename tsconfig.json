@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "esnext",                          // modern JS
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["esnext"],                           // use latest ES features
+    "jsx": "react-native",                       // ✅ required for RN
+    "allowJs": true,
+    "skipLibCheck": true,                        // ✅ ignore mismatched lib types
+    "esModuleInterop": true,                     // allow default imports
+    "allowSyntheticDefaultImports": true,
+    "strict": true,                              // strict typing
+    "noEmit": true,                              // don’t output JS files
+    "resolveJsonModule": true,                   // allow importing .json
+    "isolatedModules": true,
+    "types": ["react", "react-native","./src/declarations.d.ts"],
+  },
+  "include": [
+    "src",                                       // your app code
+    "App.tsx",
+    "firebaseConfig.ts"                          // ✅ your Firebase config file
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
