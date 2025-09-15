@@ -1,0 +1,1 @@
+export const BACKEND_URL = 'https://mychatapp-backend-1tfz.onrender.com'
